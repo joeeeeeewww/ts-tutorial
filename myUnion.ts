@@ -40,3 +40,9 @@ function getDbId(id: number | string) {
 const data: number[] = [1, 2, 3, "4"] // this once's now allowing
 const data3: (string | number)[] = [1, 2, 3, "4"] // this one's common error
 // this means data3 is either all numbers or all strings
+
+let pi: 3.24 = 3.24
+
+let seatAllotment: "aisle" | "middle" | "widow"
+seatAllotment = "aisle"
+seatAllotment = "crew"
