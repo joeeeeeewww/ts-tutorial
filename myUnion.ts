@@ -27,5 +27,10 @@ getDbId(3)
 getDbId("3")
 
 function getDbId(id: number | string) {
-    id.toLowerCase()
+    if (typeof id === "string") {
+        id.toLowerCase()
+    }
+    else {
+        id.toFixed(3)
+    }
 }
