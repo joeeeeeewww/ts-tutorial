@@ -1,4 +1,4 @@
-let score: number = 33
+let score: number | string = 33
 
 score = 44
 
