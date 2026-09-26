@@ -19,9 +19,13 @@ let jo: User | Admin = { name: "jo", id: 123 }
 // this is allowed
 jo = { username: "joe@gsajh", id: 3 }
 
-function getDbId(id: number | string) {
-    // making some API calls
-    console.log(`DB id is  S{id}`)
-}
+// function getDbId(id: number | string) {
+//     // making some API calls
+//     console.log(`DB id is  S{id}`)
+// }
 getDbId(3)
 getDbId("3")
+
+function getDbId(id: number | string) {
+    id.toLowerCase()
+}
