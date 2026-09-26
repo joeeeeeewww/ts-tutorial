@@ -34,3 +34,9 @@ function getDbId(id: number | string) {
         id.toFixed(3)
     }
 }
+
+// array
+
+const data: number[] = [1, 2, 3, "4"] // this once's now allowing
+const data3: string[] | number[] = [1, 2, 3, "4"] // this one's common error
+// this means data3 is either all numbers or all strings
